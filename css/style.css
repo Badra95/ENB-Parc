@@ -1,22 +1,25 @@
 
-.cont{
-	display: flex;
-
-	height: 60vh;
+.cont1{
+	/*display: flex;*/
+	
+	
 	position: relative;
+	max-width: 600px;
 
 }
-.up{
-	display: block;
+
+.cont2{
+	/*display: flex;*/
+
+	
+	position: relative;
+	max-width: 600px;
+
 }
-.mid{
-	display: none;
-}
-.down{
-	display: none;
-}
+
 .ima{
-	width: 100% \9;
+
+	max-height: 700px;
 }
 .fa.fa-arrow-left{
 	position: absolute;
@@ -31,4 +34,5 @@
 }
 i{
 	color: black;
+
 }
