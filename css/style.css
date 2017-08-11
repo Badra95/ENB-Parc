@@ -1,0 +1,34 @@
+
+.cont{
+	display: flex;
+
+	height: 60vh;
+	position: relative;
+
+}
+.up{
+	display: block;
+}
+.mid{
+	display: none;
+}
+.down{
+	display: none;
+}
+.ima{
+	width: 100% \9;
+}
+.fa.fa-arrow-left{
+	position: absolute;
+	left: 2.5%;
+	bottom:50%;
+}
+
+.fa.fa-arrow-right{
+	position: absolute;
+	right: 2.5%;
+	bottom:50%;
+}
+i{
+	color: black;
+}
