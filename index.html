@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE htm
 <html lang="fr">
 <head>
   <meta charset="utf-8">
@@ -32,7 +32,23 @@
             </div>
           </div>
           <li><a class="logo" href="#acceuil"><h1>ENB Parc</h1></a></li>
-          <li><a href="#reservation"><img src="img/reserved1.png" alt="Reserver"></a></li>
+          <li><a data-toggle="modal" href="#reservation"><img src="img/reserved1.png" alt="Favoris"></a></li>
+          <div class="modal" id="reservation">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3>Vos Favoris</h3>
+                  <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <h3>Les favoris:</h3>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-warning" data-dismiss="modal">&rarr;</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </ul>
       </nav>
     </section>
@@ -40,91 +56,171 @@
   <main>
     <section class="main">
       <nav class="nav-main">
-        <a class="back"><img src="img/gauche1.png" alt="Reculer"></a>
-        <a class="next"><img src="img/droite1.png" alt="Avancer"></a>
+        <img class="back" src="img/gauche1.png" alt="Reculer">
+        <img class="next" src="img/droite1.png" alt="Avancer">
       </nav>
       <div id="parc-1">
 
-      <div class="cont1 col-8 px-0 m-auto d-flex align-items-center">
-      <i class="fa fa-arrow-left euro fa-4x col-2 text-right" aria-hidden="true"></i>
-      <img src="image/europa1.jpg"  class="ima europa img-fluid mt-5 col-8"/>
+        <div class="cont1 col-8 px-0 m-auto d-flex align-items-center">
+          <i class="fa fa-arrow-left  fa-2x col-2 text-right" aria-hidden="true"></i>
+          <img src="image/europa1.jpg"  class="ima europa img-fluid col-8"/>
 
-      <i class="fa fa-arrow-right euro fa-4x col-2" aria-hidden="true"></i>
-      </div>
+          <i class="fa fa-arrow-right  fa-2x col-2" aria-hidden="true"></i>
+        </div>
 
-      <p class="offset-2 col-8 text-center mt-5">Europa-Park est un parc à thèmes et complexe de loisirs allemand....</p>
-      <a data-toggle="modal" class="btn btn-primary d-block mx-auto mb-5 p-2 col-2" href="#modal1">click</a>
+        <a data-toggle="modal" href="#modal1">
+          <figcaption class="text-center" >
+            <small class="d-block">Europa</small><span>Allemagne</span>
+          </figcaption>
+        </a>
 
-      <div class="modal" id="modal1">
-      <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-      <header class="modal-header">
-      <h3>Europa park</h3>
-      <button class="close" data-dismiss="modal">&times;</button>
-      </header>
-      <div class="modal-body">
-      <p>Europa-Park est un parc à thèmes et complexe de loisirs allemand situé à Rust (Bade-Wurtemberg), entre les villes de Fribourg-en-Brisgau et Strasbourg. Fondé par la famille Mack (détentrice de l'entreprise Mack Rides), il a été inauguré le 12 juillet 1975.
-      Le parc comporte 61 attractions, 5 hôtels, des chambres d'hôtes, un camping-caravaning, un village de tipis et un total de 4 500 lits : il s'agit du plus grand parc à thèmes et complexe hôtelier d'Allemagne3.
-      Avec 5,6 millions d'entrées en 2016, Europa-Park se place en 2e position des parcs d'attractions les plus visités en Europe, derrière le Parc Disneyland. Le parc est en outre la destination touristique allemande la plus fréquentée, devant le château de Neuschwanstein et la cathédrale de Cologne.
-      </p>
-      </div>
-      <footer class="modal-footer">
-      <button class="btn btn-primary" data-dismiss="modal">Back</button>
-      </footer>
-      </div>
-      </div>
-      </div>
-      </div>
-
-       <div id="parc-2">
-
-      <div class="cont2 col-8 px-0 m-auto d-flex align-items-center">
-      <i class="fa fa-arrow-left dolly fa-4x col-2 text-right" aria-hidden="true"></i>
-      <img src="image/dolly1.jpg"  class="ima dollywo img-fluid mt-5 col-8"/>
-      <i class="fa fa-arrow-right dolly fa-4x col-2" aria-hidden="true"></i>
-      </div>
-      <p class="offset-2 col-8 text-center mt-5">Le parc d'attractions appartient en partie à la chanteuse américaine....</p>
-      <a data-toggle="modal" class="btn btn-primary d-block mx-auto mb-5 p-2 col-2" href="#modal3">click</a>
-
-      <div class="modal" id="modal3">
-      <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-      <header class="modal-header">
-      <h3>Dollywood</h3>
-      <button class="close" data-dismiss="modal">&times;</button>
-      </header>
-      <div class="modal-body">
-      <p>Ce parc d'attractions appartient en partie à la chanteuse américaine Dolly Parton, surnommée la "reine de la Country" aux USA. Il est particulièrement réputé et apprécié pour ses attractions familiales et ses concerts et spectacles (n°1 du classement mondial). Il possède également une des meilleures montagnes russes en bois du monde : Thunderhead
-      </p>
-      </div>
-      <footer class="modal-footer">
-      <button class="btn btn-primary" data-dismiss="modal">Back</button>
-      </footer>
-      </div>
-      </div>
-      </div>
+        <div class="modal" id="modal1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <header class="modal-header">
+                <h3>Europa park</h3>
+                <button class="close" data-dismiss="modal">&times;</button>
+              </header>
+              <div class="modal-body">
+                <p>Europa-Park est un parc à thèmes et complexe de loisirs allemand situé à Rust (Bade-Wurtemberg), entre les villes de Fribourg-en-Brisgau et Strasbourg. Fondé par la famille Mack (détentrice de l'entreprise Mack Rides), il a été inauguré le 12 juillet 1975.
+                  Le parc comporte 61 attractions, 5 hôtels, des chambres d'hôtes, un camping-caravaning, un village de tipis et un total de 4 500 lits : il s'agit du plus grand parc à thèmes et complexe hôtelier d'Allemagne3.
+                  Avec 5,6 millions d'entrées en 2016, Europa-Park se place en 2e position des parcs d'attractions les plus visités en Europe, derrière le Parc Disneyland. Le parc est en outre la destination touristique allemande la plus fréquentée, devant le château de Neuschwanstein et la cathédrale de Cologne.
+                </p>
+              </div>
+              <footer class="modal-footer">
+                <button class="btn btn-primary" data-dismiss="modal">Back</button>
+              </footer>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <div id="parc-2">
 
+        <div class="cont2 col-8 px-0 m-auto d-flex align-items-center">
+          <i class="fa fa-arrow-left  fa-2x col-2 text-right" aria-hidden="true"></i>
+          <img src="image/dolly1.jpg"  class="ima dollywo img-fluid col-8"/>
+          <i class="fa fa-arrow-right  fa-2x col-2" aria-hidden="true"></i>
+        </div>
+        <a data-toggle="modal" href="#modal3">
+          <figcaption class="text-center" >
+            <small class="d-block">Dollywood</small><span>Etat-Unis</span>
+          </figcaption>
+        </a>
+
+
+        <div class="modal" id="modal3">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <header class="modal-header">
+                <h3>Dollywood</h3>
+                <button class="close" data-dismiss="modal">&times;</button>
+              </header>
+              <div class="modal-body">
+                <p>Ce parc d'attractions appartient en partie à la chanteuse américaine Dolly Parton, surnommée la "reine de la Country" aux USA. Il est particulièrement réputé et apprécié pour ses attractions familiales et ses concerts et spectacles (n°1 du classement mondial). Il possède également une des meilleures montagnes russes en bois du monde : Thunderhead
+                </p>
+              </div>
+              <footer class="modal-footer">
+                <button class="btn btn-primary" data-dismiss="modal">Back</button>
+              </footer>
+            </div>
+          </div>
+        </div>
       </div>
+      <div id="parc-3">
 
-      <div id="connexion">
+        <figure class="slideshow">
+
+          <section class="m-auto col-8 d-flex align-items-center">
+            <i class="fa fa-arrow-left  fa-2x col-2 text-right" aria-hidden="true"></i>
+            <img src="image/cedar-1.jpg"  class="ima cedar img-fluid col-8"/>
+            <i class="fa fa-arrow-right  fa-2x col-2" aria-hidden="true"></i>
+          </section>
+
+          <a data-toggle="modal" href="#item">
+            <figcaption class="text-center" >
+              <small class="d-block">Sandusky</small><span>Ohio - Etats-Unis</span>
+            </figcaption>
+          </a>
+
+          <div class="modal" id="item">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <header class="modal-header">
+                  <h3>Sandusky</h3>
+                  <button class="close" data-dismiss="modal">&times;</button>
+                </header>
+                <div class="modal-body">
+                  <img src="image/cedar-1.jpg" class="img-fluid" alt="">
+                  <p>C'est LE parc de tous les records. Plus grand nombre d'attractions (69 dont 17 montagnes russes),
+                    la meilleure montagne russe du monde (le Millenium Force)...
+                    Il a été pendant 15 ans consécutifs classé n°1 du classement d'Amusement Today.</p>
+                  </div>
+                  <footer class="modal-footer"><button class="btn btn-primary" data-dismiss="modal">back</button>
+                  </footer>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+        </div>
+
+
+        <div id="parc-4">
+
+          <figure class="slideshow">
+
+            <section class="m-auto col-8 d-flex align-items-center">
+              <i class="fa fa-arrow-left  fa-2x col-2 text-right " aria-hidden="true"></i>
+              <img src="image/amusement-1.jpg"  class="ima amu img-fluid col-8"/>
+              <i class="fa fa-arrow-right  fa-2x col-2" aria-hidden="true"></i>
+            </section>
+
+            <a data-toggle="modal" href="#past1">
+              <figcaption class="text-center" >
+                <small class="d-block">Elysburg</small><span>Pennsylvanie - Etats-Unis</span>
+              </figcaption>
+            </a>
+
+            <div class="modal" id="past1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <header class="modal-header">
+                    <h3>Elysburg</h3>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                  </header>
+                  <div class="modal-body">
+                    <img src="image/amusement-1.jpg" class="img-fluid " alt="">
+                    <p>Réputé pour ses 2 montagnes russes en bois (dont le Phoenix,
+                      classé 2ème meilleur rollercoaster en bois du monde), sa Maison Hantée (classée 4ème meilleure du monde)
+                      ainsi que pour la qualité de ses points de restauration (n°1 du classement depuis 14 ans).</p>
+                    </div>
+                    <footer class="modal-footer"><button class="btn btn-primary" data-dismiss="modal">back</button>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+            </figure>
+
+          </div>
+
+    <div id="connexion">
       <div id="bodco">
-      <form>
-            <input type="text" placeholder="   username" autofocus>
-            <input type="password" placeholder="   password" required>
-            <input type="submit" value="LOGIN" id="log">
-      </form>
+        <form>
+          <input type="text" placeholder="   username" autofocus>
+          <input type="password" placeholder="   password" required>
+          <input type="submit" value="LOGIN" id="log">
+        </form>
       </div>
 
 
-  </section>
-</main>
+    </section>
+  </main>
   <footer class="page-footer">
     <nav class="nav-footer">
       <ul>
-        <li><a href="" id="delete"><img src="img/delete1.png" alt="Supprimer"></a></li>
-        <li><a href="" id="valider"><img src="img/valid1.png" alt="Valider"></a></li>
+        <li><img id="delete" src="img/delete1.png" alt="Supprimer"></li>
+        <li><img id="valider" src="img/valid1.png" alt="Valider"></li>
       </ul>
     </nav>
   </footer>
@@ -133,6 +229,7 @@
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="js/style.js"></script>
   <script>
 
   $(document).ready(function(){
@@ -154,19 +251,17 @@
       n = n+1;
       if (n >= 5){
         n = 1;}
-      $('#parc-'+n).show('slow');
-    });
-    $('.back').click(function(){
-      $('#parc-'+n).hide('slow');
-      n = n-1;
-      if (n <= 0){
-        n = 4;}
-      $('#parc-'+n).show('slow');
-    });
-  });
+        $('#parc-'+n).show('slow');
+      });
+      $('.back').click(function(){
+        $('#parc-'+n).hide('slow');
+        n = n-1;
+        if (n <= 0){
+          n = 4;}
+          $('#parc-'+n).show('slow');
+        });
+      });
 
-</script>
-<script src="js/style.js">
-</script
-</body>
-</html>
+      </script>
+      </body>
+      </html>
