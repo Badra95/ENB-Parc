@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://use.fontawesome.com/64906f59e1.js"></script>
+  <title></title>
+</head>
+<body>
+
+  <div id="Park-2" class="col-8 offset-2 row">
+
+    <figure class="slideshow">
+
+      <img src="Images/park2/cedar-1.jpg"  class="ima img-fluid"/>
+
+      <section class="d-flex justify-content-between">
+        <a href="#"><i class="fa fa-arrow-left fa-2x " aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-arrow-right fa-2x " aria-hidden="true"></i></a>
+      </section>
+
+      <a data-toggle="modal" href="#item">
+        <figcaption class="text-center" >
+          <small class="d-block">Sandusky</small><span>Ohio - Etats-Unis</span>
+        </figcaption>
+      </a>
+
+      <div class="modal" id="item">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <header class="modal-header">
+              <h3>Sandusky</h3>
+              <button class="close" data-dismiss="modal">&times;</button>
+            </header>
+            <div class="modal-body">
+              <img src="Images/park2/cedar-1.jpg" class="img-fluid" alt="">
+              <p>C'est LE parc de tous les records. Plus grand nombre d'attractions (69 dont 17 montagnes russes),
+                la meilleure montagne russe du monde (le Millenium Force)...
+                Il a été pendant 15 ans consécutifs classé n°1 du classement d'Amusement Today.</p>
+              </div>
+              <footer class="modal-footer"><button class="btn btn-primary" data-dismiss="modal">back</button>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </figure>
+
+    </div>
+
+
+    <div id="Park-4" class="col-8 offset-2 row">
+
+      <figure class="slideshow">
+
+        <img src="Images/park4/amusement-1.jpg"  class="effect img-fluid"/>
+
+        <section class="d-flex justify-content-between">
+          <a href="#"><i class="fa fa-arrow-left fa-2x " aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-arrow-right fa-2x " aria-hidden="true"></i></a>
+        </section>
+
+        <a data-toggle="modal" href="#past1">
+          <figcaption class="text-center" >
+            <small class="d-block">Elysburg</small><span>Pennsylvanie - Etats-Unis</span>
+          </figcaption>
+        </a>
+
+        <div class="modal" id="past1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <header class="modal-header">
+                <h3>Elysburg</h3>
+                <button class="close" data-dismiss="modal">&times;</button>
+              </header>
+              <div class="modal-body">
+                <img src="Images/park4/amusement-1.jpg" class="img-fluid " alt="">
+                <p>Réputé pour ses 2 montagnes russes en bois (dont le Phoenix,
+                  classé 2ème meilleur rollercoaster en bois du monde), sa Maison Hantée (classée 4ème meilleure du monde)
+                  ainsi que pour la qualité de ses points de restauration (n°1 du classement depuis 14 ans).</p>
+                </div>
+                <footer class="modal-footer"><button class="btn btn-primary" data-dismiss="modal">back</button>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </figure>
+
+      </div>
+
+
+
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+      <script >
+      $(document).ready(function(){
+
+
+        var i = 1;
+        $(".fa-arrow-right").click(function(){
+          i= i+1;
+          if(i >= 4){
+            i = 1;
+          }
+          $('.ima').attr('src','Images/park2/cedar-'+i+'.jpg');
+        });
+        $(".fa-arrow-left").click(function(){
+          i= i-1;
+          if(i <= 0){
+            i = 3;
+          }
+          $('.ima').attr('src','Images/park2/cedar-'+i+'.jpg');
+        });
+      });
+
+      $(document).ready(function(){
+
+
+        var i = 1;
+        $(".fa-arrow-right").click(function(){
+          i= i+1;
+          if(i >= 4){
+            i = 1;
+          }
+          $('.effect').attr('src','Images/park4/amusement-'+i+'.jpg');
+        });
+        $(".fa-arrow-left").click(function(){
+          i= i-1;
+          if(i <= 0){
+            i = 3;
+          }
+          $('.effect').attr('src','Images/park4/amusement-'+i+'.jpg');
+        });
+      });
+
+
+      </script>
+
+
+
+    </body>
+
+
+    </html>
