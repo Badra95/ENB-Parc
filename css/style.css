@@ -12,6 +12,7 @@ body {
 
 header {
   margin-top: 6vh;
+
   /*border-bottom: 2px solid grey;
   margin: 24px auto;*/
 }
@@ -68,7 +69,91 @@ header {
   justify-content: space-between;
   align-items: center;
 
+
 }
 footer {
 
 }
+.cont1{
+	/*display: flex;*/
+
+
+}
+
+.cont2{
+	/*display: flex;*/
+
+
+}
+
+.ima{
+  border-radius: 50%;
+  height: 40vh;
+	/*max-height: 700px;*/
+}
+.fa.fa-arrow-left{
+	left: 2.5%;
+	bottom:50%;
+}
+
+.fa.fa-arrow-right{
+	right: 2.5%;
+	bottom:50%;
+}
+i{
+	color: black;
+
+}
+
+#connexion{
+  background-image: linear-gradient(90deg, #168FE3,#C81780	);
+background-repeat: repeat;
+background-position: 0% 0%;
+background-size: auto auto;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+#bodco{
+	width: 50%;
+	height: 50%;
+}
+#bodco form{
+  width:100%;
+  height:100%;
+  background-color:white;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+}
+#bodco{
+  box-shadow: 0 5px 5px rgba(0,0,0,0.6);
+}
+#bodco form input{
+  background-color:lightgray;
+  width:200px;
+  height:40px;
+  margin-top:20px;
+  border:none;
+}
+#bodco form input:nth-child(3){
+  background-color:green;
+  color:white;
+}
+#parc-1,#parc-2{
+	display: none;
+}
+
+.fa.fa-arrow-left.acc{
+	position: absolute;
+	left: 2.5%;
+	bottom:40%;
+
+}
+.fa.fa-arrow-right.acc{
+	position: absolute;
+	right: 2.5%;
+	bottom:40%;
