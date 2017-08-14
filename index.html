@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://use.fontawesome.com/b70488fd26.js"></script>
+  <title>ENB Parc</title>
+</head>
+<body>
+  <header>
+    <section class="page-header">
+      <nav class="nav-top">
+        <ul>
+          <li><a data-toggle="modal" href="#parametre"><img src="img/tools1.png" alt="Parametre"></a></li>
+          <div class="modal" id="parametre">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3>Paramètre</h3>
+                  <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <p>Les paramètre.....</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-warning" data-dismiss="modal">&rarr;</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <li><a class="logo" href="#acceuil"><h1>ENB Parc</h1></a></li>
+          <li><a href="#reservation"><img src="img/reserved1.png" alt="Reserver"></a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <main>
+    <section class="main">
+      <nav class="nav-main">
+        <a class="back"><img src="img/gauche1.png" alt="Reculer"></a>
+        <a class="next"><img src="img/droite1.png" alt="Avancer"></a>
+      </nav>
+    <div class="parc-1">
+      <img src="img/delete1.png" alt="...">
+    </div>
+
+    <div class="parc-2">
+      <img src="img/delete2.png" alt="...">
+    </div>
+
+    <div class="parc-3">
+      <img src="img/valid1.png" alt="...">
+    </div>
+
+    <div class="parc-4">
+      <img src="img/valid2.png" alt=".">
+    </div>
+
+  </section>
+  </main>
+  <footer class="page-footer">
+    <nav class="nav-footer">
+      <ul>
+        <li><a href="" id="delete"><img src="img/delete1.png" alt="Supprimer"></a></li>
+        <li><a href="" id="valider"><img src="img/valid1.png" alt="Valider"></a></li>
+      </ul>
+    </nav>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script>
+
+  $(document).ready(function(){
+    n=1;
+    $('.next').click(function(){
+      $('.parc-'+n).hide('slow');
+      n = n+1;
+      if (n >= 5){
+        n = 1;}
+      $('.parc-'+n).show('slow');
+    });
+    $('.back').click(function(){
+      $('.parc-'+n).hide('slow');
+      n = n-1;
+      if (n <= 0){
+        n = 1;}
+      $('.parc-'+n).show('slow');
+    });
+  });
+
+</script>
+</body>
+</html>

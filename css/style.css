@@ -1,0 +1,74 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+body {
+  max-width: 100%;
+}
+
+header {
+  margin-top: 6vh;
+  /*border-bottom: 2px solid grey;
+  margin: 24px auto;*/
+}
+
+.logo {
+  font-family: 'Bungee Inline', cursive;
+  color: #000;
+  position: relative;
+  display: inline-block;
+}
+
+.logo:before {
+  content: "";
+  /*background: black;*/
+  border-top: 4px solid;
+  border-left: 4px solid;
+  border-bottom: 4px solid;
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  top:-3px;
+  left:-7px;
+  display: inline-block;
+}
+
+.logo:after {
+  content: "";
+  /*background: black;*/
+  border-top: 4px solid;
+  border-right: 4px solid;
+  border-bottom: 4px solid;
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  top:-3px;
+  right:-7px;
+  display: inline-block;
+}
+
+.page-header ul, .page-footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  /*margin: 0 12px;*/
+}
+
+.parc-2, .parc-3, .parc-4 {
+  display: none;
+}
+
+.nav-main {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+footer {
+
+}
